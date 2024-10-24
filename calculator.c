@@ -26,6 +26,14 @@ double square(double x) {
 double cube(double x) {
     return x * x * x;
 }
+double inverse(double x) {
+    if (x != 0) {
+        return 1 / x;
+    } else {
+        printf("Error: Division by zero\n");
+        return 0;
+    }
+}
 
 int main() {
     int a, b;
@@ -71,13 +79,13 @@ int main() {
                 break;
             case '^':
                 printf("Enter an integer: ");
-                scanf("%d", &c);
-                printf("Square of %d: %d\n",c,square(c));
+                scanf("%d", &a);
+                printf("Will be implemented soon...\n");
                 break;
             case '#':
                 printf("Enter an integer: ");
-                scanf("%d", &c);
-                printf("cube of %d: %d\n", c, cube(c));
+                scanf("%d", &a);
+                printf("Will be implemented soon...\n");
                 break;
             case 'i':
                 printf("Enter an integer: ");
